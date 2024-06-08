@@ -1,0 +1,91 @@
+* {
+    /* the * html type selects everything like when you do "from tkinter import *" in python */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f172a;
+    /* sets the background dark blue */
+    color: white;
+    /* makes every element white */
+    min-height: 100vh;
+    /* sets the minimum height to 100% of the total View Height */
+    /* think of margins and padding as a parcel
+    /* the margin is how far away each box is from another */
+    padding: 14px;
+    /* the padding is how much padding is on the inside of the box like the packing peanuts */
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-family: sans-serif, 'Times New Roman';
+    /* just makes it sans-serif and if that doesn't work uses a backup of times new roman
+}
+
+header {
+    display: flex;
+    /* tells the parameter how to display its contents */
+    align-items: center;
+    /* aligns how the elements in the row respect the boundaries of their container */
+    justify-content: space-between;
+    /* justify-content is like align items but in the horizontal plane */
+    /* space-around makes them equally distant from each side of the page and eachother */
+
+}
+
+nav,
+/* adding a comma makes css access both nav and section at the same time */
+section {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    /* basically logically splits them up */
+}
+
+.whiteLink {
+    /* classes allow more specific styling */
+    /* to select a class you have to put a period before the name of the class */
+    color: white;
+}
+
+.lightgreyLink {
+    /* the class takes priority over the tag selector */
+    color: lightgrey;
+}
+
+a {
+    /* makes the underline under the hyperlink disappear */
+    text-decoration: unset;
+    font-size: 0.8em;
+}
+
+a:hover {
+    /* makes it so that when you hover you mouse over the text the underline comes back */
+    text-decoration: underline;
+}
+
+main {
+    /* only works if the parent has a flex display */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* ################## */
+    align-items: center;
+    justify-content: center;
+    /* these three lines center all of the content in main */
+    gap: 24px;
+}
+
+.headerText {
+    /* you can use px but em is best since it is relative scale */
+    /* basically sets this header's font size to 4 times it original size */
+    font-size: 4em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#headerLogo {
+    /* access the id using a # instead of .
+    /* the id takes priority over the class */
+    font-family: sans-serif;
+}

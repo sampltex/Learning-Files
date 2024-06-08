@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Posts</title>
+{% endblock %}
+
+{% block body %}
+<h1>All Posts</h1>
+
+    {% for post in posts %}
+        <h2>{{ post.title }}</h2> <!--using double braces prints out the object-->
+        {% if post.author %} <!--this is how you do if statements-->
+            <h3>By: {{ post.author }}</h3>
+        {% else %}
+            <h3>By: N/A</h3>
+        {% endif %}
+        <p>{{ post.content }}</p>
+        <!--this for loop will print out the title and content of each post-->
+    {% endfor %}
+
+{% endblock %}
