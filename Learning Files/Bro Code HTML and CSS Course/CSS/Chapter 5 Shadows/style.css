@@ -1,0 +1,13 @@
+h1{
+    /* for text-shadow you need both the horizontal offset and vertical offset and optionally the blur then color */
+    /* to add more than one shadow separate it with a comma and use the same format as before */
+    text-shadow: 3px 3px 5px rgb(100, 149, 255), -3px -3px 5px red;
+}
+
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(228, 228, 228);
+    /* this is the same format as the text shadow ({horizontal offset} {vertical offset} {blur} {color}; */
+    box-shadow: 3px 3px 5px;
+}

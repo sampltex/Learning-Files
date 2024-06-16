@@ -1,0 +1,25 @@
+/* margins are the space around an element */
+/* it goes element > padding > border > margin */
+/* also divs are block level elements which means they take up an entire horizontal space */
+
+body{
+    margin:0px
+}
+
+.box{
+    border: 5px solid;
+    font-size: 5em;
+    width: 250px;
+    height: 250px;
+}
+
+#box1{
+    background-color: red;
+    /* you can individually access each side of margin with margin-{side} */
+    /* setting a margin to auto makes the margin as big as possible to center something you can set margin to auto*/
+    margin: 25px;
+    margin: auto;
+}
+#box2{
+    background-color: blue;
+}

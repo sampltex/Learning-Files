@@ -1,0 +1,20 @@
+ /* @font-face{ this is called a font-face rule
+    src: url(fonts/Oswald.ttf); this is the relative filepath to the font file
+    font-family: Oswald; this is what you put when you call the font (you can put whatever)
+} */
+
+h1{
+    /* sans serif fonts are easier to read with smaller text and on mobile */
+    /* its good practice to include a "fallback safe" to use in case the first cant be loaded */
+    /* these fonts are Arial, Verdana, Tahona, Trebuhet MS, Times New Roman, Georgia, Courier New, Brush Script M7, and Impact (bruh) */
+    font-family: oswald, verdana, arial; /* there can be more than 2 and they are loaded from first to last */
+}
+p{
+    /* if a font name has a space you can make it a string */
+    font-family: montserrat, "lucida console", "courior new";
+    /* you can use em or px to define font size */
+    /* px is consistent while em is a percentage of the original font (1.2x the original size in this case */
+    font-size: 1.1em; 
+    font-weight: normal; /* normal, bold/bolder and lighter */
+    font-style: italic; /* normal, italic or oblique */
+}

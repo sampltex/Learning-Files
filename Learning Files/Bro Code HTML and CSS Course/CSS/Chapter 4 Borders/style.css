@@ -1,0 +1,26 @@
+/* h1{
+    / solid, dashed, dotted, double, groove, ridge, inset, outset, none /
+    border-style: solid; 
+    border-width: 3px;
+    border-color: hsl(268, 100%, 18%);
+    / controls the rounded edges of the border /
+    border-radius: 10px;
+} */
+
+/* there is a shorthand syntax */
+
+h1{
+    /* border: {width} {style} {color}; */
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+p{
+    /* you can also use the shorthand syntax for bottom, top, right and left: */
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    border-right: 3px dotted black;
+    border-left: 3px dotted black;
+
+    border-radius: 10px;
+}
